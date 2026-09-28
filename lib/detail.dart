@@ -16,11 +16,6 @@ class BookDetailPage extends StatelessWidget {
 
       body: CustomScrollView(
         slivers: [
-
-          // =================================================
-          // APP BAR + COVER
-          // =================================================
-
           SliverAppBar(
             expandedHeight: 390,
             pinned: true,
@@ -47,8 +42,6 @@ class BookDetailPage extends StatelessWidget {
                         MainAxisAlignment.end,
 
                     children: [
-
-                      // COVER
                       Container(
                         width: 185,
                         height: 250,
@@ -101,11 +94,6 @@ class BookDetailPage extends StatelessWidget {
               ),
             ),
           ),
-
-          // =================================================
-          // CONTENT
-          // =================================================
-
           SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.fromLTRB(
@@ -120,8 +108,6 @@ class BookDetailPage extends StatelessWidget {
                     CrossAxisAlignment.start,
 
                 children: [
-
-                  // TITLE
                   Text(
                     book.title,
 
@@ -158,8 +144,6 @@ class BookDetailPage extends StatelessWidget {
                   ),
 
                   const SizedBox(height: 18),
-
-                  // GENRE + RATING
                   Row(
                     children: [
 
@@ -179,8 +163,6 @@ class BookDetailPage extends StatelessWidget {
                   ),
 
                   const SizedBox(height: 30),
-
-                  // INFORMATION
                   _sectionTitle(
                     'Informasi Buku',
                     Icons.info_outline,
@@ -236,8 +218,6 @@ class BookDetailPage extends StatelessWidget {
                   ),
 
                   const SizedBox(height: 30),
-
-                  // DESCRIPTION
                   _sectionTitle(
                     'Deskripsi / Sinopsis',
                     Icons.auto_stories_outlined,
@@ -276,8 +256,6 @@ class BookDetailPage extends StatelessWidget {
                   ),
 
                   const SizedBox(height: 30),
-
-                  // BACK BUTTON
                   SizedBox(
                     width: double.infinity,
                     height: 55,
@@ -323,10 +301,6 @@ class BookDetailPage extends StatelessWidget {
     );
   }
 
-  // =====================================================
-  // SECTION TITLE
-  // =====================================================
-
   static Widget _sectionTitle(
     String title,
     IconData icon,
@@ -363,10 +337,6 @@ class BookDetailPage extends StatelessWidget {
       ],
     );
   }
-
-  // =====================================================
-  // TAG
-  // =====================================================
 
   static Widget _tag(
     IconData icon,
@@ -415,10 +385,6 @@ class BookDetailPage extends StatelessWidget {
       ),
     );
   }
-
-  // =====================================================
-  // INFORMATION ITEM
-  // =====================================================
 
   static Widget _infoItem(
     IconData icon,

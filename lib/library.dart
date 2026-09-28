@@ -12,10 +12,6 @@ class LibraryPage extends StatelessWidget {
 
       body: Column(
         children: [
-
-          // =========================
-          // HEADER
-          // =========================
           Container(
             width: double.infinity,
             padding: const EdgeInsets.fromLTRB(
@@ -85,9 +81,6 @@ class LibraryPage extends StatelessWidget {
             ),
           ),
 
-          // =========================
-          // BOOK GRID
-          // =========================
           Expanded(
             child: GridView.builder(
               padding: const EdgeInsets.fromLTRB(
@@ -119,11 +112,6 @@ class LibraryPage extends StatelessWidget {
     );
   }
 }
-
-
-// =====================================================
-// BOOK CARD
-// =====================================================
 
 class _BookCard extends StatelessWidget {
   final BookModel book;
@@ -168,10 +156,6 @@ class _BookCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
 
             children: [
-
-              // =========================
-              // COVER
-              // =========================
 
               Expanded(
                 flex: 7,
@@ -224,10 +208,6 @@ class _BookCard extends StatelessWidget {
                       ),
                     ),
 
-                    // =========================
-                    // RATING BADGE
-                    // =========================
-
                     Positioned(
                       top: 10,
                       right: 10,
@@ -277,10 +257,6 @@ class _BookCard extends StatelessWidget {
                   ],
                 ),
               ),
-
-              // =========================
-              // BOOK INFO
-              // =========================
 
               Expanded(
                 flex: 4,
@@ -334,8 +310,6 @@ class _BookCard extends StatelessWidget {
                             MainAxisAlignment.spaceBetween,
 
                         children: [
-
-                          // GENRE
                           Container(
                             padding:
                                 const EdgeInsets.symmetric(

@@ -63,11 +63,6 @@ class _LoginPageState extends State<LoginPage> {
 
             child: Column(
               children: [
-
-                // =========================
-                // ICON
-                // =========================
-
                 Container(
                   width: 85,
                   height: 85,
@@ -118,10 +113,6 @@ class _LoginPageState extends State<LoginPage> {
                 ),
 
                 const SizedBox(height: 35),
-
-                // =========================
-                // LOGIN CARD
-                // =========================
 
                 Container(
                   padding: const EdgeInsets.all(22),
@@ -174,8 +165,6 @@ SizedBox(
 ),
 
                       const SizedBox(height: 25),
-
-                      // EMAIL
                       const Text(
                         'Email',
 
@@ -214,8 +203,6 @@ SizedBox(
                       ),
 
                       const SizedBox(height: 18),
-
-                      // PASSWORD
                       const Text(
                         'Password',
 
@@ -269,8 +256,6 @@ SizedBox(
                           ),
                         ),
                       ),
-
-                      // ERROR
                       if (isLoginFailed) ...[
                         const SizedBox(height: 15),
 
@@ -310,8 +295,6 @@ SizedBox(
                       ],
 
                       const SizedBox(height: 25),
-
-                      // LOGIN BUTTON
                       SizedBox(
                         width: double.infinity,
                         height: 54,
